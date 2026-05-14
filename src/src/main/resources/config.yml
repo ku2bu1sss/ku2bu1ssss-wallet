@@ -1,0 +1,81 @@
+wallet:
+  starting-balance: 0.0
+  
+  currency-symbol: "zł"
+  
+  currency-format: "{amount} zł"
+  
+  currency-format-no-decimals: "{amount} zł"
+
+gui:
+  wallet:
+    size: 45
+    title: "&#FFD700&lTWÓJ PORTFEL"
+    
+    items:
+      'f1':
+        material: ORANGE_STAINED_GLASS_PANE
+        display_name: "&7"
+        slots: [0, 8, 36, 44]
+      'f2':
+        material: YELLOW_STAINED_GLASS_PANE
+        display_name: "&7"
+        slots: [1, 7, 9, 17, 27, 35, 37, 43]
+      'f3':
+        material: WHITE_STAINED_GLASS_PANE
+        display_name: "&7"
+        slots: [2, 3, 4, 5, 6]
+    
+    balance:
+      slot: 4
+      material: GOLD_INGOT
+      display_name: "&#FFD700&lTwoje Saldo:"
+      lore:
+        - ""
+        - "&#FFFF00 ▸ &f{balance}"
+        - ""
+    
+    category_buttons:
+      klucze:
+        slot: 39
+        material: TRIPWIRE_HOOK
+        display_name: "&#FF6B35&lKlucze"
+        lore:
+          - ""
+          - "&7Kliknij aby zobaczyć klucze"
+          - ""
+      dodatki:
+        slot: 40
+        material: DIAMOND
+        display_name: "&#4ECDC4&lDodatki"
+        lore:
+          - ""
+          - "&7Kliknij aby zobaczyć dodatki"
+          - ""
+      rangi:
+        slot: 41
+        material: GOLDEN_APPLE
+        display_name: "&#F38181&lRangi"
+        lore:
+          - ""
+          - "&7Kliknij aby zobaczyć rangi"
+          - ""
+    
+    available_slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  
+  confirmation-gui:
+    title: "&#FF4444&lPotwierdzenie zakupu"
+    size: 27
+    
+    item-slot: 13
+    
+    confirm-slot: 11
+    confirm-item: LIME_STAINED_GLASS_PANE
+    
+    cancel-slot: 15
+    cancel-item: RED_STAINED_GLASS_PANE
+
+shop:
+  item-glow: true
+
+  max-items: 28

@@ -1,0 +1,36 @@
+name: lordcode-portfel
+version: '1.0'
+main: pl.ku2bu1ssWallet.Ku2bu1ssWallet
+api-version: '1.18'
+author: ku2bu1ss
+description: Plugin na portfel
+softdepend: [PlaceholderAPI]
+commands:
+  portfel:
+    description: Otwiera GUI portfela
+    usage: /portfel
+    permission: lordcode.use
+    permission-message: §cNie masz uprawnień do użycia tej komendy!
+  
+  lordportfel:
+    description: Główna komenda administracyjna portfela
+    usage: /lordportfel <give|take|set|add> [args]
+    permission: lordcode.admin
+    permission-message: §cNie masz uprawnień do użycia tej komendy!
+    aliases: [wallet, kw]
+
+permissions:
+  lordcode.use:
+    description: Pozwala na otwieranie portfela
+    default: true
+  
+  lordcode.buy:
+    description: Pozwala na kupowanie przedmiotów
+    default: true
+  
+  lordcode.admin:
+    description: Pozwala na zarządzanie portfelami i sklepem
+    default: op
+    children:
+      lordcode.use: true
+      lordcode.buy: true

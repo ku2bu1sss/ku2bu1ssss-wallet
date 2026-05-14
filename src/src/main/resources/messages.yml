@@ -1,0 +1,105 @@
+prefix: "&#FFD700&lPortfel &r"
+
+no-permission: "{prefix}&#FF4444Nie masz uprawnień do użycia tej komendy!"
+player-not-found: "{prefix}&#FF4444Gracz &f{player} &#FF4444nie został znaleziony!"
+player-not-online: "{prefix}&#FF4444Gracz &f{player} &#FF4444nie jest online!"
+must-be-player: "{prefix}&#FF4444Musisz być graczem, aby użyć tej komendy!"
+invalid-amount: "{prefix}&#FF4444Nieprawidłowa kwota! Użyj liczby większej niż 0."
+
+wallet:
+  balance-info: "{prefix}&#00FF00Twoje saldo: &#FFD700{balance}"
+
+  give:
+    success-sender: "{prefix}&#00FF00Dodano &#FFD700{amount} &#00FF00do portfela gracza &#FFFF00{player}"
+    success-receiver: "{prefix}&#00FF00Otrzymałeś &#FFD700{amount}&#00FF00!"
+
+  take:
+    success-sender: "{prefix}&#00FF00Zabrano &#FFD700{amount} &#00FF00z portfela gracza &#FFFF00{player}"
+    success-receiver: "{prefix}&#FF4444Odebrano Ci &#FFD700{amount}&#FF4444!"
+    insufficient-funds: "{prefix}&#FF4444Gracz &#FFFF00{player} &#FF4444nie ma wystarczających środków!"
+
+  set:
+    success-sender: "{prefix}&#00FF00Ustawiono saldo gracza &#FFFF00{player} &#00FF00na &#FFD700{amount}"
+    success-receiver: "{prefix}&#00FF00Twoje saldo zostało ustawione na &#FFD700{amount}&#00FF00!"
+
+  add:
+    success: "{prefix}&#00FF00Dodano przedmiot &#FFFF00{item} &#00FF00do sklepu za &#FFD700{price}&#00FF00!"
+    no-item-in-hand: "{prefix}&#FF4444Musisz trzymać przedmiot w ręce!"
+    shop-full: "{prefix}&#FF4444Sklep jest pełny! Maksymalna liczba przedmiotów: &#FFFF00{max}"
+    already-exists: "{prefix}&#FF4444Ten przedmiot już istnieje w sklepie!"
+
+gui:
+  balance-display:
+    name: "&#FFD700&lTwoje Saldo"
+    lore:
+      - ""
+      - "&#FFFFFF&lAktualne saldo:"
+      - "&#FFD700&l{balance}"
+      - ""
+      - "&#AAAAAA&oKliknij na przedmiot aby kupić"
+  
+  border-pane:
+    name: "&r"
+    lore: []
+  
+  shop-item:
+    lore:
+      - ""
+      - "&#FFFFFF&lCena: &#FFD700&l{price}"
+      - "&#FFFFFF&lIlość: &#FFFF00&l{amount}x"
+      - ""
+      - "&#00FF00&l► Kliknij aby kupić!"
+
+  confirmation:
+    confirm-button:
+      name: "&#00FF00&l✔ TAK - Kup"
+      lore:
+        - ""
+        - "&#FFFFFFKliknij aby potwierdzić"
+        - "&#FFFFFFzakup za &#FFD700{price}"
+    
+    cancel-button:
+      name: "&#FF4444&l✖ NIE - Anuluj"
+      lore:
+        - ""
+        - "&#FFFFFFKliknij aby anulować"
+        - "&#FFFFFFzakup"
+    
+    item-display-lore:
+      - ""
+      - "&#FFFFFF&lCena: &#FFD700&l{price}"
+      - "&#FFFFFF&lTwoje saldo: &#FFD700&l{balance}"
+      - ""
+      - "&#FFFFFFCzy na pewno chcesz kupić?"
+
+purchase:
+  success: "{prefix}&#00FF00Zakupiono &#FFFF00{amount}x {item} &#00FF00za &#FFD700{price}&#00FF00!"
+  insufficient-funds: "{prefix}&#FF4444Nie masz wystarczających środków! Brakuje: &#FFD700{missing}"
+  inventory-full: "{prefix}&#FF4444Twój ekwipunek jest pełny!"
+  cancelled: "{prefix}&#FFAA00Anulowano zakup."
+
+errors:
+  data-save-failed: "{prefix}&#FF4444Błąd podczas zapisywania danych!"
+  data-load-failed: "{prefix}&#FF4444Błąd podczas wczytywania danych!"
+  unknown-error: "{prefix}&#FF4444Wystąpił nieznany błąd!"
+
+help:
+  header:
+    - ""
+  commands:
+    - " &8» &#FFD700/portfel"
+    - "   &7Otwiera główne menu twojego portfela."
+    - ""
+    - " &8» &#FFD700/kubuswallet give <gracz> <kwota>"
+    - "   &7Przekazuje gotówkę innemu graczowi."
+    - ""
+    - " &8» &#FFD700/kubuswallet take <gracz> <kwota>"
+    - "   &7Zabiera gotówkę z konta gracza."
+    - ""
+    - " &8» &#FFD700/kubuswallet set <gracz> <kwota>"
+    - "   &7Ustawia stan konta gracza."
+    - ""
+    - " &8» &#FFD700/kubuswallet add <kat> <ilość> <cena> [slot]"
+    - "   &7Dodaje trzymany przedmiot do sklepu."
+  footer:
+    - " "
